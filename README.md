@@ -48,8 +48,6 @@ vulnyx-writeups/
 │   └── images/                   # Visual evidence and screenshots
 │       └── *.png
 │
-├── prompt.md                     # VulNyx specific writeup generation prompt
-├── prompt_wu.md                  # General writeup generation prompt
 └── README.md
 ```
 
@@ -78,7 +76,7 @@ Each VulNyx machine is solved manually, without AI assistance, as an authentic p
 
 **Phase 2: Report Generation**
 
-A dedicated AI prompt (`prompt.md` or `prompt_wu.md`) transforms the raw `output.md` and image files into a structured technical writeup:
+The raw `output.md` and image files are transformed into a structured technical writeup:
 
 - Raw terminal logs are reorganized into the standardized reporting format
 - Visual evidence is embedded inline at the relevant technical steps
@@ -386,13 +384,11 @@ For professional inquiries or collaboration proposals, contact information can b
 - 36 machine writeups completed with full documentation
 - Standardized executive summary format implemented across all reports
 - Multimodal documentation workflow operational with `output.md` capture pipeline
-- VulNyx specific generation prompts (`prompt.md` and `prompt_wu.md`) established
 
 ### Planned Enhancements
 
 - Extension of the machine inventory as new VulNyx machines are released
 - Cross-machine vulnerability trend analysis and pattern documentation
-- Refinement of the documentation generation prompts for consistency
 - Additional medium and high difficulty machines as they are solved
 
 ---
