@@ -84,7 +84,7 @@ by Ben "epi" Risher 🤓                 ver: 2.13.1
 
 The login page rendered at `/library/login/index.php` was the front door to the whole application.
 
-![alt text](image.png)
+![alt text](loweb/image.png)
 
 ## Initial Access
 
@@ -157,7 +157,7 @@ Table: users
 
 3. Cracking the bcrypt hash would have taken an unreasonable amount of time, so the injection itself was leveraged for a full authentication bypass. Because the backend concatenated the raw input straight into the query, submitting the payload `' OR '1=1 --` for both username and password made the WHERE clause evaluate to true for every row, granting access to the admin panel without knowing a single password.
 
-![alt text](image-1.png)
+![alt text](loweb/image-1.png)
 
 ### Local File Inclusion to Remote Code Execution
 
