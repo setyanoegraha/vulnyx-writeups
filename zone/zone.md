@@ -183,7 +183,7 @@ body {
 </html>  
 ```
 
-![](images/images.png)
+![](images/img.png)
 
 8. A brute force test of alternative PHP extensions showed that only `.phar` bypassed the upload filter:
 

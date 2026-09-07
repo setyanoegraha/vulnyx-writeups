@@ -202,7 +202,7 @@ aleister@wicca:~$ sudo -u root /usr/bin/links
 
 9. Launching `links` with `sudo` brought up the interactive console interface. Pressing `Esc` or `F9` opened the top navigation menu bar, where navigating to the `File` menu exposed the `OS Shell` option. Selecting this option executed a local shell session inherited from the running binary:
 
-![](images/2026-08-14-13-35-29.png)
+![](images/img.png)
 
 10. Spawning the shell through `links` dropped directly into a root shell session, allowing retrieval of both the user and root flags:
 

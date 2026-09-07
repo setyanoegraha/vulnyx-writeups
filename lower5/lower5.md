@@ -41,9 +41,9 @@ The scan revealed two open ports: SSH on port 22 and an Apache HTTP server on po
 
 2. Visiting the web application in a browser revealed a Bootstrap corporate template site:
 
-![Website landing page](lower5/image.png)
+![Website landing page](images/img.png)
 
-![Website secondary view](lower5/image-1.png)
+![Website secondary view](images/img-1.png)
 
 ---
 
@@ -118,9 +118,9 @@ ________________________________________________
 
 Two critical paths were confirmed as readable. Reading `/etc/passwd` proved arbitrary file read, and the Apache access log at `/var/log/apache2/access.log` was far more significant: because Apache records the raw `User-Agent` string for each request, writing PHP code into that field would poison the log with executable code.
 
-![LFI reading /etc/passwd](image-3.png)
+![LFI reading /etc/passwd](images/img-3.png)
 
-![LFI reading Apache access log](image-2.png)
+![LFI reading Apache access log](images/img-2.png)
 
 ### Log Poisoning and Remote Code Execution
 

@@ -84,7 +84,7 @@ by Ben "epi" Risher 🤓                 ver: 2.13.1
 
 The login page rendered at `/library/login/index.php` was the front door to the whole application.
 
-![alt text](loweb/image.png)
+![alt text](images/img.png)
 
 ## Initial Access
 
@@ -157,7 +157,7 @@ Table: users
 
 3. Cracking the bcrypt hash would have taken an unreasonable amount of time, so the injection itself was leveraged for a full authentication bypass. Because the backend concatenated the raw input straight into the query, submitting the payload `' OR '1=1 --` for both username and password made the WHERE clause evaluate to true for every row, granting access to the admin panel without knowing a single password.
 
-![alt text](loweb/image-1.png)
+![alt text](images/img-1.png)
 
 ### Local File Inclusion to Remote Code Execution
 
@@ -192,14 +192,14 @@ ________________________________________________
 lang                    [Status: 200, Size: 8597, Words: 2552, Lines: 268, Duration: 75ms]
 ```
 
-![alt text](image-2.png)
+![alt text](images/img-2.png)
 
 2. Supplying `/etc/passwd` through the `lang` parameter returned the full contents of the file embedded inside the page, proving that PHP wrapper filters were honoured by the vulnerable include.
 
-![alt text](image-3.png)
+![alt text](images/img-3.png)
 
 3. With file inclusion confirmed, the next step was to turn the read into execution. The `data://` wrapper was used to feed PHP code directly into the include, and a `cmd` parameter was chained on top to supply operating system commands. The result was a fully functional command execution as the `www-data` user.
-![alt text](image-4.png)
+![alt text](images/img-4.png)
 ```bash
 ┌──(ouba㉿CLIENT-DESKTOP)-[/tmp/vulnyx]
 └─$ curl -b "PHPSESSID=$sess" -G "http://192.168.100.218/library/admin/index.php" --data-urlencode "lang=$payload" 

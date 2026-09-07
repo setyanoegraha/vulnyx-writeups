@@ -122,7 +122,7 @@ Finished
 
 The discovered WebSVN interface disclosed version 2.6.0.
 
-![](./images/2026-08-15-21-54-16.png)
+![](images/img-2.png)
 
 ---
 

@@ -250,7 +250,7 @@ The credentials `admin:w3bd4v513` were recovered, providing access to the WebDAV
 
 8. Accessing the WebDAV endpoint with the recovered credentials revealed an empty directory listing:
 
-![](serve/images/image.png)
+![](images/img.png)
 
 9. A PHP webshell was created locally and uploaded to WebDAV as a `.txt` file, then renamed to `.php` using a MOVE request to bypass extension restrictions:
 
@@ -282,7 +282,7 @@ The credentials `admin:w3bd4v513` were recovered, providing access to the WebDAV
 
 10. The webshell was tested and confirmed command execution as `www-data`:
 
-![](serve/images/image-1.png)
+![](images/img-1.png)
 
 ```zsh
 ~/projects/wu/vulnyx-writeups main*                                           17:22:55  

@@ -151,7 +151,7 @@ The virtual host `tech.unique.nyx` answered with a real page, so it was added to
 192.168.56.105 tech.unique.nyx
 ```
 
-![tech.unique.nyx corporate website with team section](images/2026-08-11-20-22-35.png)
+![tech.unique.nyx corporate website with team section](images/img.png)
 
 The rendered site was a corporate theme for a technology firm. Its Team page revealed three employees by name: Tom Rensed, Kathren Mory, and Lancer Jack. These identities were prime candidates for username generation, since the SSH service sat exposed and would accept a brute force attempt.
 
@@ -203,7 +203,7 @@ The generator produced 44 candidate logins, covering patterns such as `firstinit
 CeWL 6.2.1 (More Fixes) Robin Wood (robin@digi.ninja) (https://digi.ninja/)
 ```
 
-![Suspicious leetspeak text NewY0rk embedded in the site content](images/2026-08-11-20-52-46.png)
+![Suspicious leetspeak text NewY0rk embedded in the site content](images/img-1.png)
 
 The crawl of the site content revealed odd information: references to `unique infoway` and a stylized rendering of New York written as `NewY0rk`. That deliberate leetspeak substitution was a strong signal that the site itself was seeding password material, and it justified capturing every word that mixed letters and digits.
 

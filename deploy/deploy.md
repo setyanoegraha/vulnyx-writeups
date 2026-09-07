@@ -87,11 +87,11 @@ SSH sat on port 22, the default Apache page on port 80, and an Apache Tomcat ins
 
 4. Opening the Tomcat application on port 8080 in a browser displayed the standard Tomcat landing page:
 
-![Apache Tomcat default page](./images/2026-08-13-07-24-49.png)
+![Apache Tomcat default page](images/img-1.png)
 
 5. Attempting to log into the Tomcat Manager application with the classic default credentials `tomcat:s3cret` granted access instantly:
 
-![Tomcat Manager authenticated session](./images/2026-08-13-07-24-01.png)
+![Tomcat Manager authenticated session](images/img.png)
 
 ---
 
@@ -110,7 +110,7 @@ Final size of war file: 1091 bytes
 
 7. The WAR was uploaded as a new application through the Tomcat Manager deployment panel:
 
-![WAR deployment in the Tomcat Manager](./images/2026-08-13-07-35-41.png)
+![WAR deployment in the Tomcat Manager](images/img-2.png)
 
 8. A netcat listener was staged on the attacking machine before triggering the payload:
 
@@ -242,7 +242,7 @@ Every minute, root made the entire web document root world writable.
 
 16. A PHP web shell was placed inside `/var/www/html` to take advantage of the widened permissions:
 
-![PHP reverse shell placed in the web root](./images/2026-08-13-07-54-04.png)
+![PHP reverse shell placed in the web root](images/img-3.png)
 
 17. The web shell executed commands as the `toor` account:
 

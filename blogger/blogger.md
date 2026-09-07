@@ -187,9 +187,9 @@ The pair `peter:peterpan` was validated against the WordPress login.
 
 9. The credentials were used to reach the WordPress administration dashboard. From there, the bundled "Hello Dolly" plugin, whose file lives at `wp-content/plugins/hello.php`, was edited through the theme and plugin editor UI to embed a PHP backdoor that executes raw commands supplied through the `cmd` parameter:
 
-![WordPress administration login](images/2026-08-12-11-35-45.png)
+![WordPress administration login](images/img-1.png)
 
-![WordPress plugin editor with injected backdoor](images/2026-08-12-11-40-20.png)
+![WordPress plugin editor with injected backdoor](images/img-2.png)
 
 10. The resulting web shell was verified by executing `id` remotely:
 

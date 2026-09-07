@@ -249,7 +249,7 @@ $1$xyz$txYmAcRyLmpCUI5OSYRFi1
 
 The Geany editor, running in the root X11 session, displayed `/etc/passwd` with the new entry `r00t:$1$xyz$txYmAcRyLmpCUI5OSYRFi1:0:0:root:/root:/bin/bash` appended at the bottom:
 
-![](image/image.png)
+![](images/img.png)
 
 12. Switching to the newly created `r00t` user delivered a full root shell, and both flags were retrieved:
 

@@ -80,11 +80,11 @@ The target exposed no SSH or auxiliary services, making the web application the 
 
 4. Browsing the application revealed the HackingStation interface and its product query functionality:
 
-![](./images/2026-08-16-13-04-44.png)
+![](images/img.png)
 
 5. Interacting with the query feature exposed the request flow that reached `exploitQuery.php` and accepted a `product` parameter:
 
-![](./images/2026-08-16-13-05-05.png)
+![](images/img-1.png)
 
 The behavior indicated that the product value was processed server side, so the parameter was tested for shell metacharacter injection.
 

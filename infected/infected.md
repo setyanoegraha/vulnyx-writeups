@@ -109,7 +109,7 @@ Finished
 
 The `info.php` page exposed server configuration details, and the loaded module list revealed a suspicious backdoored Apache module.
 
-![](../images/2026-08-14-22-40-43.png)
+![](../agent/images/img.png)
 
 ---
 
@@ -216,7 +216,7 @@ $ sudo -u root /usr/bin/joe
 
 Inside Joe, the editor command interface was used to invoke a shell while retaining the root privilege context.
 
-![](../images/2026-08-14-22-56-51.png)
+![](../agent/images/img-1.png)
 
 11. The resulting shell had `uid=0`, and both flags were read:
 

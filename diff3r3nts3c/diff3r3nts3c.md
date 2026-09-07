@@ -126,19 +126,19 @@ The scan found the application assets, standard pages, and an exposed `uploads` 
 
 5. Browser interaction with the site showed the front page and upload workflow that accepted files into the web accessible upload area:
 
-![](images/2026-08-16-13-23-51.png)
+![](images/img-1.png)
 
-![](images/2026-08-16-13-23-30.png)
+![](images/img.png)
 
-![](images/2026-08-16-13-24-59.png)
+![](images/img-2.png)
 
 6. A PHP compatible payload was uploaded into a numbered folder under `uploads`, after which the application displayed the uploaded content and location:
 
-![](images/2026-08-16-13-40-09.png)
+![](images/img-4.png)
 
-![](images/2026-08-16-13-39-55.png)
+![](images/img-3.png)
 
-![](images/2026-08-16-13-40-31.png)
+![](images/img-5.png)
 
 ---
 

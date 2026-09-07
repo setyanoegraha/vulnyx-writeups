@@ -179,7 +179,7 @@ listening on [any] 4444 ...
 
 8. The uploaded `revshell.js` is triggered through the Node.js web application on port 3000, as shown below.
 
-![alt text](lower7/image.png)
+![alt text](images/img.png)
 
 9. The connection lands immediately and an interactive shell as `a.clark` is obtained. A Python PTY upgrade is performed for full terminal interactivity.
 

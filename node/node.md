@@ -93,7 +93,7 @@ SSH sat on port 22, Apache on port 80, and the standout service was the Node.js 
 
 4. Opening port 1880 in a browser displayed the Node-RED flow editor:
 
-![Node-RED flow editor interface](./images/2026-08-13-10-28-16.png)
+![Node-RED flow editor interface](images/img.png)
 
 Node-RED is a visual programming tool built on Node.js. Its editor was reachable without any authentication, and its nodes are capable of executing arbitrary JavaScript and shell commands. That combination gave full command execution on the box.
 
@@ -107,7 +107,7 @@ listening on [any] 4444 ...
 
 6. A flow was constructed in the editor containing a node that executes a Bash reverse shell aimed at the attacker's machine:
 
-![Reverse shell flow configured in Node-RED](./images/2026-08-13-10-34-07.png)
+![Reverse shell flow configured in Node-RED](images/img-1.png)
 
 7. Deploying the flow triggered the payload, and the shell connected back as the `dev` user:
 

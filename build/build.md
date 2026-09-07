@@ -88,11 +88,11 @@ http://192.168.100.217:8080/login?from=%2F [200 OK] Country[RESERVED][ZZ], HTML5
 
 1. Jenkins is a well known target because of its default credentials. The administrator account is often left at the default `admin:admin`, and this machine is no exception. Submitting those credentials against the sign in form on port 8080 grants full access to the Jenkins dashboard.
 
-![alt text](build/image.png)
+![alt text](images/img.png)
 
 2. Inside the dashboard the goal is to reach the Script Console, which is the cornerstone of Jenkins exploitation. The console is reached through the Manage Jenkins menu and allows arbitrary Groovy code to run on the Jenkins master node, which on this box runs as the highest privilege Windows account.
 
-![alt text](build/image-1.png)
+![alt text](images/img-1.png)
 
 3. A Groovy reverse shell payload is prepared. It launches `powershell.exe`, opens a TCP socket to the attacking host on port 4444, and pumps the process input, output, and error streams through the socket so the remote attacker receives a full interactive PowerShell session.
 

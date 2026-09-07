@@ -64,7 +64,7 @@ Nmap done: 1 IP address (1 host up) scanned in 9.66 seconds
 
 The box exposed SSH on port 22 and a Docmed themed Apache site on port 80. While poking at the page behavior, a suspicious parameter surfaced in `doctor-item.php`: feeding it the value `Doctors.html` pulled the expected page content, which hinted at an unvalidated file read.
 
-![Local file inclusion vector on doctor-item.php](images/2026-08-12-17-11-16.png)
+![Local file inclusion vector on doctor-item.php](images/img.png)
 
 ---
 
