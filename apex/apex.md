@@ -193,11 +193,11 @@ The account `horus` was confirmed to exist with a bash shell, and the `personal 
 
 7. The `/backup` directory was opened in a browser and the credentials `horus` and `H0Ru$$3rv3` were entered into the Basic authentication prompt:
 
-![](apex/images/image.png)
+![](apex/image.png)
 
 8. The prompt was accepted and the directory listing loaded, revealing a single file, `database.db`:
 
-![](apex/images/image-1.png)
+![](apex/image-1.png)
 
 The listing showed `database.db` at roughly 8.0K, last modified in January 2025. The file was downloaded and identified as a SQLite 3 database:
 
