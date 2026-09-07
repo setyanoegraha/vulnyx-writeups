@@ -41,9 +41,9 @@ The scan revealed two open ports: SSH on port 22 and an Apache HTTP server on po
 
 2. Visiting the web application in a browser revealed a Bootstrap corporate template site:
 
-![Website landing page](image.png)
+![Website landing page](lower5/image.png)
 
-![Website secondary view](image-1.png)
+![Website secondary view](lower5/image-1.png)
 
 ---
 
