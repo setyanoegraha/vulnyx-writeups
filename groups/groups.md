@@ -433,15 +433,15 @@ uid=0(root) gid=0(root) groups=0(root),0(root),1(bin),2(daemon),3(sys),4(adm),6(
 root
 groups
 ~ # cat /root/root.txt /home/setup/user.txt 
-1471e4e05a4db95d353cc867fe317314
-44c5b763d21e9a3ed8cad56977bfd75c
+147...
+44c...
 ```
 
 `doas -u root sh` now matches the injected rule, asks for no password, and lands a root shell. Reading the drop in file from inside that shell confirms the patched rule is the one doas itself parses. Both flags are captured.
 
 ```text
-user flag: 1471e4e05a4db95d353cc867fe317314
-root flag: 44c5b763d21e9a3ed8cad56977bfd75c
+user flag: 147...
+root flag: 44c...
 ```
 
 ---
